@@ -1,38 +1,87 @@
-.App {
-  text-align: center;
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+body {
+  color: black;
+  font-family: "Fira Sans", sans-serif;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+.main {
+  height: 100vh;
+  width: 100vw;
+}
+
+.container {
+  position: relative;
+  background-image: url("../public/images/Background.png");
+  height: 100%;
+}
+
+.box_1,
+.box_2,
+.box_3,
+.box_4 {
+  position: absolute;
+}
+
+.box_1 {
+  top: 15px;
+  right: 0;
+  width: 68%;
+  height: 200px;
+  padding-right: 30px;
+}
+
+.box_2 {
+  top: 10px;
+  width: 30%;
+  height: 230px;
+}
+
+.box_3 {
+  top: 145px;
+  left: 30px;
+  width: 55%;
+  height: 550px;
+  padding: 50px;
+}
+
+.box_4 {
+  top: 510px;
+  width: 65%;
+  left: 20px;
+}
+
+/* Media Queries for Mobile Responsiveness */
+@media only screen and (max-width: 768px) {
+  .box_1 {
+    top: 40px;
+    right: 10px;
+    width: 90%;
+    height: auto;
+    padding-right: 10px;
   }
-}
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+  .box_2 {
+    top: 150px;
+    width: 90%;
+    height: auto;
   }
-  to {
-    transform: rotate(360deg);
+
+  .box_3 {
+    top: 380px;
+    left: 5%;
+    width: 90%;
+    height: auto;
+    padding: 10px;
+  }
+
+  .box_4 {
+    top: 670px;
+    width: 95%;
+    left: 10px;
   }
 }
